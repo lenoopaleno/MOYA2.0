@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+:root{
+    font-family: 'Lato', sans-serif;
+    --main-gray: #f5f5f5;
+    --main-dark: #363636;
+    --secondary-brown: #a89797;
+    --secondary-green: #87a890;
+    --green: #ECEFE2;
+    --mocna-zielen: #A2DF78;
+    --dziwna-zielen: #798658;
+}
+
+
+body{
+    background-color: var(--main-gray);
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Flexbox class tag */
+.flex{
+    display: flex;
+    gap: 3rem;
+}
+
+/* Whole header properties */
+.primary-header{
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background: hsl(0, 0%, 0%, 0.82);
+    backdrop-filter: blur(5px);
+}
+
+
+/* ul navigation */
+
+.primary-navigation{
+    list-style: none;
+    padding: 0 1rem;
+    margin: 0;
+}
+
+.primary-navigation a{
+    text-decoration: none;
+    color: var(--main-gray);
+    font-size: 1em;
+}
+
+.primary-navigation a:hover{
+    color: var(--mocna-zielen);
+}
+
+@media (max-width: 35em){
+    .primary-navigation{
+        position: fixed;
+        z-index: 100;
+        inset: 0 0 0 35%;
+
+        flex-direction: column;
+        padding: min(20vh, 10rem) 2em;
+
+        transform: translateX(100%);
+        transition: transform 250ms ease-in-out;
+        background: hsl(0, 0%, 0%, 0.9);
+        backdrop-filter: blur(3px);
+
+    }
+    .primary-navigation[data-visible="true"]{
+        transform: translateX(0%);
+    }
+    
+    .primary-navigation a{
+        font-size: 1.5em;
+        color: var(--green);
+    }
+}
+
+/* Logo properties */
+
+.logo{
+    margin: 0.75rem;
+    height: 2rem;
+}
+
+@media (max-width: 35em){
+    .logo{
+        margin: 1.2rem;
+        height: 2.5rem;
+        
+    }
+}
+
+/* Navigation toggle icon */
+
+.mobile-nav-toggle{
+    display: none;
+}
+
+@media (max-width: 35em){
+    .mobile-nav-toggle{
+        display: block;
+        position: fixed;
+        z-index: 9999;
+        background: url("../assets/icons/menu-icon.svg");
+        background-repeat: no-repeat;
+        border: 0;
+        width: 2.5rem;
+        aspect-ratio: 1;
+        top: 1rem;
+        right: 1.2rem;
+        filter: invert(100%) sepia(0%) saturate(6089%) hue-rotate(205deg) brightness(102%) contrast(102%);
+    }
+
+    .mobile-nav-toggle[aria-expanded="true"]{
+        background: url("../assets/icons/close-icon.svg");
+    }
+}
+
+/* Hero section */
+
+.hero{
+    background-image: url('../img/hero-image-lg.png');
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-header{
+    color: var(--green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    padding: 100px 10px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-header h2{
+    letter-spacing: 0.6rem;
+    color: var(--mocna-zielen);
+    margin: 0;
+}
+
+.hero-header h1{
+    font-size: 5rem;
+    margin: 0;
+    text-align: center;
+}
+
+
+@media (max-width: 35em){
+    .hero-header{
+        padding: 20px;
+    }
+
+    .hero-header h1{
+        font-size: 3.5rem;
+    }
+
+    .hero-header h2{
+        letter-spacing: 0.3rem;
+    }
+}
+
+/* About us */
+
+.about-us{
+    min-height: 90vh;
+    background-color: var(--green);
+}
+
+.about-us-content{
+    padding: 7rem;
+}
+
+.about-us-content h1{
+    color: var(--dziwna-zielen);
+    font-size: 3rem;
+    margin: 0;
+}
+
+.about-us-content h2{
+    color: var(--main-dark);
+    font-size: 2rem;
+}
+
+.about-us-content p{
+    font-size: 1.8rem;
+}
+
+@media (max-width: 760px){
+    .about-us-content{
+        padding: 4rem 3rem;
+    }
+
+    .about-us-content h1{
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+
+    .about-us-content h2{
+        font-size: 1.6rem;
+        margin: 2rem 0;
+    }
+
+    .about-us-content p{
+        font-size: 1.5rem;
+        margin: 2rem 0;
+        line-height: 2.2rem;
+    }
+
+}
+
+
+/* Utilities */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
