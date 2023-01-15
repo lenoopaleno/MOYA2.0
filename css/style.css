@@ -189,14 +189,14 @@ body{
 
 @media (max-width: 70em){
     .hero{
-        background-image: url('/img/hero-image-lg.png');
+        background-image: url('../img/hero-image-lg.png');
     }
 }
 
 @media (max-width: 700px){
 
     .hero{
-        background-image: url('/img/hero-image-lg.png');
+        background-image: url('../img/hero-image-lg.png');
     }
     .hero-header{
         padding: 20px;
@@ -216,7 +216,7 @@ body{
 /* About us */
 
 .about-us{
-    background-color: var(--green);
+    background-image:url('../img/gggrain.svg')
 }
 
 
@@ -404,7 +404,56 @@ body{
     }
 }
 
-/* Message dic */
+/*Conversation div*/
+
+.conversation{
+    display: flex;
+
+    background-image: url('../img/buildings.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 60vh;
+
+}
+
+@media (max-width: 35em){
+    .conversation-content{
+        flex-direction: column;
+    }
+}
+
+
+.conversation-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 3rem 10vw;
+    color: #f5f5f5;
+
+}
+
+.conversation-content span{
+    background-color: #000;
+}
+
+.conversation-content h2{
+    margin: 0;
+    font-size: 2.2rem;
+
+}
+
+
+.conversation-content p{
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+
+
+/* Message div */
 
 .message{
     background-color: var(--main-gray);
