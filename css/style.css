@@ -534,6 +534,7 @@ ion-icon{
 }
 
 .message-content img{
+    padding-top: 10%;
     max-height: 600px;
     
 }
