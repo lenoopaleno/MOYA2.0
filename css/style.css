@@ -754,7 +754,7 @@ footer{
 }
 
 .architektura{
-    background-image: url("../img/architektura.jpg");
+    background-image: url('../img/architektura.jpg');
     max-height: 1000px;
 
     background-size: cover;
@@ -795,11 +795,11 @@ footer{
 
 .wnetrza{
 
-    background-image: url("../img/remont.jpg");
+    background-image: url('../img/remont.jpg');
     max-height: 1000px;
 
     background-size: cover;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
 
     margin: 0;
@@ -871,7 +871,7 @@ footer{
 }
 
 .oferta-hero{
-    background-image: url("../img/oferta.jpg");
+    background-image: url('../img/oferta.jpg');
     max-height: 1400px;
     width: 100%;
     background-size: cover;
