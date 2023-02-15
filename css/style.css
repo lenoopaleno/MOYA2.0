@@ -49,7 +49,7 @@
 }
 
 body{
-    background-color: var(--main-gray);
+    background-color: #f5f5f5;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -693,7 +693,7 @@ footer{
     }
 
     .jp_hero-header{
-        padding: 25px;
+        padding: 3rem 1.5rem;
         padding-top: 100px;
         height: auto;
     }
@@ -732,7 +732,7 @@ footer{
 
 .content{
     max-width: 1100px;
-    padding: 5rem;
+    padding: 3rem 1.5rem;
     margin: 0;
 }
 
@@ -743,12 +743,10 @@ footer{
 }
 
 @media (max-width: 700px){
-    .content{
-        padding: 25px;
-    }
+
 
     .three-fields h2{
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .three-fields p{
         line-height: 2rem;
@@ -769,12 +767,16 @@ footer{
 }
 
 .architektura h2{
-    font-size: 3.7rem;
+    font-size: 4.5rem;
 }
 
 .architektura p{
     font-size: 1.5rem;
     line-height: 1.7rem;
+}
+
+.architektura > .content{
+    padding: 3rem 1rem;
 }
 
 
@@ -792,7 +794,8 @@ footer{
 }
 
 .wnetrza{
-    background: var(--green);
+
+    background-image: url("../img/remont.jpg");
     max-height: 1000px;
 
     background-size: cover;
@@ -800,27 +803,113 @@ footer{
     background-repeat: no-repeat;
 
     margin: 0;
+    margin-top: 10px;
 }
 
 .wnetrza h2{
-    font-size: 3.7rem;    
+    font-size: 4.5rem;    
+    text-align: right;
+    padding-right: 3rem;
 }
 
 .wnetrza p{
     font-size: 1.5rem;
+    font-weight: 500;
     line-height: 1.7rem;
+    text-align: right;
 }
+
+.wnetrza > .content{
+    padding: 1rem 1rem;
+    padding-left: 700px;
+    padding-right: 5rem;
+}
+
 
 @media (max-width: 700px){
     .wnetrza{
-        max-height: 2500px;
+        max-height: none;
     }
 
     .wnetrza h2{
         font-size: 3rem;
+        text-align: left;
+        padding-right: none;
     }
     .wnetrza p{
+        line-height: 2rem;
+        text-align: left;
+    }
+    .wnetrza > .content{
+        padding: 3rem 1.5rem;
+    }
+}
+
+.last-message{
+    margin-top: 10px;
+    background-color: #222;
+}
+
+.last-message p{
+    font-size: 1.6rem;
+    color: #fff;
+    text-align: center;
+}
+
+.last-message > .content{
+    padding: 1.2rem 1rem;
+}
+
+@media (max-width: 700px){
+    .last-message{
+        max-height: 2500px;
+    }
+
+    .last-message p{
         line-height: 2rem;
     }
 }
 
+.oferta-hero{
+    background-image: url("../img/oferta.jpg");
+    max-height: 1400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.oferta-hero > .content{
+    color: #000;
+
+    height: max(400px, auto);
+    max-width: 1100px;
+    padding: 3rem 1rem 2rem 1rem;
+    text-align: left;
+} 
+
+.oferta-hero > .content h1{
+    font-size: 7rem;
+    margin: 0;
+}
+
+.oferta-hero > .content p{
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    .oferta-hero > .content{
+        padding: 5rem 1rem 2rem 1rem;
+    }
+
+    .oferta-hero > .content h1{
+    font-size: 3.2rem;
+    margin: 0;
+    }
+
+    .oferta-hero > .content p{
+        font-size: 1.4rem;
+        margin: 0;
+    }
+}
