@@ -795,7 +795,7 @@ footer{
 
 .wnetrza{
 
-    background-image: url('../img/image.png');
+    background-image: url('../img/image.jpg');
     max-height: 1000px;
 
     background-size: cover;
@@ -821,8 +821,13 @@ footer{
 
 .wnetrza > .content{
     padding: 1rem 1rem;
-    padding-left: 700px;
+    padding-left: 20rem;
     padding-right: 5rem;
+}
+
+.rgba-background{
+    background-color: rgba(256, 256, 256, 0.72);
+    padding: 10px;
 }
 
 
