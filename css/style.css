@@ -795,7 +795,7 @@ footer{
 
 .wnetrza{
 
-    background-image: url('../img/remont.jpg');
+    background-image: url('../img/image.png');
     max-height: 1000px;
 
     background-size: cover;
@@ -873,10 +873,10 @@ footer{
 .oferta-hero{
     background-image: url('../img/oferta.jpg');
     max-height: 1400px;
-    width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin: 0 10px 10px 0;
 }
 
 .oferta-hero > .content{
@@ -884,17 +884,19 @@ footer{
 
     height: max(400px, auto);
     max-width: 1100px;
-    padding: 3rem 1rem 2rem 1rem;
+    padding: 5rem 1rem 2rem 1rem;
     text-align: left;
 } 
 
 .oferta-hero > .content h1{
     font-size: 7rem;
     margin: 0;
+    margin-bottom: 20px;
 }
 
 .oferta-hero > .content p{
-    font-size: 1.6rem;
+    font-size: 1.7rem;
+    font-weight: 500;
     margin: 0;
 }
 
@@ -911,5 +913,87 @@ footer{
     .oferta-hero > .content p{
         font-size: 1.4rem;
         margin: 0;
+    }
+}
+
+.vertical {
+    border-left: 6px solid black;
+    height: 200px;
+    position:absolute;
+    left: 50%;
+}
+
+.oferta-projektowanie{
+background-image: url('../img/oferta-projektowanie.jpg');
+min-height: 800px;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+color: #222;
+margin: 10px;
+}
+
+
+.tytul-oferta{
+    font-size: 3.5rem;
+}
+
+
+.lista-oferta{
+    list-style: none;
+    list-style-type: none;
+}
+
+.lista-oferta > li{
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.oferta-architektura{
+    background-image: url('../img/oferta-architektura.jpg');
+    min-height: 800px;
+    background-size: cover;
+    background-position:top;
+    background-repeat: no-repeat;
+    color: #222;
+    margin: 10px;
+}
+
+.lista-oferta, .tytul-oferta > span{
+    background-color: rgba(256, 256, 256, 0.72);
+}
+
+.oferta-wnetrza{
+    background-image: url('../img/oferta-wnetrza.jpg');
+    min-height: 800px;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    color: #222;
+    margin: 10px;
+}
+
+@media (max-width: 700px){
+    .tytul-oferta{
+        font-size: 3rem;
+    }
+    
+    .lista-oferta > li{
+        margin-bottom: 10px;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 600px){
+    .tytul-oferta{
+        font-size: 2.5rem;
+    }
+    
+    .lista-oferta > li{
+        margin-bottom: 10px;
+        font-size: 1.3rem;
+        font-weight: 500;
     }
 }
