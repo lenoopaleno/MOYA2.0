@@ -226,6 +226,7 @@ ion-icon{
     }
 
     .hero-header h1{
+        padding-top: 100px;
         font-size: 3rem;
     }
 
@@ -1347,6 +1348,7 @@ margin: 10px;
 }
 
 .centered > .content h3 a:hover{
+    text-decoration: none;
     color: #fff;
 }
 
