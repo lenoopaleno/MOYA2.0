@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - MOYA Engineering</title>
+    <link rel="stylesheet" href="css/style.css" class="rel">
+    <script src="js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+</head>
+<body>
+  <header class="primary-header flex">
+      <div>
+        <a href="index.html"><img src="img/moya-logo.svg" alt="logo-moya-engineering" class="logo"></a>
+      </div>
+
+      <button class="mobile-nav-toggle flex" 
+      aria-controls="primary-navigation" aria-expanded="false">
+      <span 
+      class="sr-only">Menu</span>
+    </button>
+
+    
+    <nav>
+      <ul id="primary-navigation"
+      data-visible="false" 
+      class="primary-navigation flex">
+        <li>
+          <a href="jak_pracujemy.html">
+            <span></span>Jak pracujemy
+          </a>
+        </li>
+        <li>
+          <a href="oferta.html">
+            <span></span>Oferta
+          </a>
+        </li>
+        <li>
+          <a href="projekty.html">
+            <span></span>Projekty
+          </a>
+        </li>
+        <li>
+          <a href="kontakt.html">
+            <span></span>Kontakt
+          </a>
+      </ul>
+    </nav>
+  </header>
+  <div class="flex-contact">
+  <div class="flex-left">
+        <form id="contact" action="" method="post">
+            <h4>Skontaktuj się z nami!</h4>
+            <fieldset>
+              <input placeholder="Imie i nazwisko" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+              <input placeholder="Twoj adres email" type="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+              <input placeholder="Twoj numer telefonu (opcjonalnie)" type="tel" tabindex="3">
+            </fieldset>
+            <fieldset>
+              <textarea placeholder="Napisz do nas w swojej sprawie..." tabindex="5" required></textarea>
+            </fieldset>
+            <fieldset>
+              <button name="submit" type="submit" id="contact-submit" data-submit="...Wysyłanie">Wyślij</button>
+            </fieldset>
+          </form>
+  </div>
+  
+  <div class="flex-right">
+    <div class="centered">
+        <div class="content">
+            <h1>Kontakt</h1>
+            <h3>Tel: +48 782 443 479 </h3>
+            <h3>Mail: biuro@b-moya.pl</h3>
+            <h3>Adres: <br>
+                Sucha 3, 2 piętro<br>
+                Wrocław, Polska</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20042.209136290097!2d17.031762931668453!3d51.10336509251529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9d02df307a1%3A0xb2d6efbb7a5e5ea4!2sMOYA%20ENGINEERING%20-%20architektura%2C%20aran%C5%BCacje%20wn%C4%99trz%2C%20projektowanie!5e0!3m2!1spl!2spl!4v1677583326862!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    </div>
+  </div>
+  </div>
+</div>
+<footer>
+    <div class="footer-content">
+      <div class="footer-ul">
+        <ul>
+          <li><a href="#">Jak pracujemy</a></li>
+          <li><a href="#">Oferta</a></li>
+          <li><a href="#">Projekty</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-ul">
+        <ul id="icons">
+          <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+          <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        </ul>
+      </div>
+
+
+    </div>
+  </footer>
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA85B1NeGoJ-BxKcOKJPBqGAF_0a7BOPAA&callback=initMap&v=weekly"
+  defer
+></script>
+</body>
