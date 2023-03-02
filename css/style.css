@@ -1189,6 +1189,7 @@ margin: 10px;
     background-position:center;
     background-repeat: no-repeat;
     color: #fff;
+    padding-top: 40px;
   }
 
   @media (max-width: 800px){
@@ -1345,3 +1346,9 @@ margin: 10px;
     height: 400px; /* The height is 400 pixels */
     width: 100%; /* The width is the width of the web page */
   }
+
+.dane-kontaktowe{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
