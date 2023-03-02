@@ -1341,6 +1341,16 @@ margin: 10px;
     margin-bottom: 20px;
     }
 
+.centered > .content h3{
+    text-decoration: none;
+    color: #fff;
+}
+
+.centered > .content h3:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
 /* Set the size of the div element that contains the map */
 #map {
     height: 400px; /* The height is 400 pixels */
