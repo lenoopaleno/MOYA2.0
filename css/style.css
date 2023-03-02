@@ -1245,8 +1245,9 @@ margin: 10px;
   #contact h4 {
     margin: 5px 0 15px;
     display: block;
-    font-size: 13px;
+    font-size: 2rem;
     font-weight: 400;
+    color: #fff;
   }
   
   fieldset {
@@ -1341,13 +1342,11 @@ margin: 10px;
     margin-bottom: 20px;
     }
 
-.centered > .content h3{
-    text-decoration: none;
+.centered > .content h3 a{
     color: #fff;
 }
 
-.centered > .content h3:hover{
-    text-decoration: none;
+.centered > .content h3 a:hover{
     color: #fff;
 }
 
