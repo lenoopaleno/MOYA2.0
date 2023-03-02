@@ -1196,6 +1196,10 @@ margin: 10px;
         flex-direction: column-reverse;
     }
 
+    .flex-right{
+        padding-top: 40px;
+    }
+
     .flex-left, .flex-right{
         flex: 100%;
     }
@@ -1285,15 +1289,15 @@ margin: 10px;
     cursor: pointer;
     width: 100%;
     border: none;
-    background: #4CAF50;
-    color: #FFF;
+    background: var(--green);
+    color: #000;
     margin: 0 0 5px;
     padding: 10px;
     font-size: 15px;
   }
   
   #contact button[type="submit"]:hover {
-    background: #43A047;
+    background: #416149;
     -webkit-transition: background 0.3s ease-in-out;
     -moz-transition: background 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
