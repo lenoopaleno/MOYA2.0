@@ -1,7 +1,5 @@
 <?php
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
 // Get the form data
 $name = $_POST['name'];
 $email = $_POST['email'];
