@@ -16,28 +16,34 @@ addEventListener('DOMContentLoaded', () => {
         })
     })
 
+  const form = document.querySelector("#contact");
+  const nameInput = document.querySelector("#name");
+  const emailInput = document.querySelector("#email");
+  const phoneInput = document.querySelector("#phone");
+  const messageInput = document.querySelector("#message");
 
-// Initialize and add the map
-function initMap() {
-    // The location of Uluru
-    const uluru = {
-        "address": {
-          "regionCode": "US",
-          "administrativeArea": "California",
-          "locality": "Mountain View",
-          "addressLines": ["123 Fake St"]
-        }
-      };
-    // The map, centered at Uluru
-    const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 4,
-      center: uluru,
-    });
-    // The marker, positioned at Uluru
-    const marker = new google.maps.Marker({
-      position: uluru,
-      map: map,
-    });
-  }
-  
-  window.initMap = initMap;
+  form.addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+
+    // Get the form data
+    const name = nameInput.value;
+    const email = emailInput.value;
+    const phone = phoneInput.value;
+    const message = messageInput.value;
+
+    // Send the form data to the PHP script
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", "/php/mail.php", true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+        alert("Wiadomość została wysłana.");
+        // Clear the form
+        nameInput.value = "";
+        emailInput.value = "";
+        phoneInput.value = "";
+        messageInput.value = "";
+      }
+    };
+    xhr.send("name=" + encodeURIComponent(name) + "&email=" + encodeURIComponent(email) + "&phone=" + encodeURIComponent(phone) + "&message=" + encodeURIComponent(message));
+  });
