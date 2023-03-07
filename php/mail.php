@@ -1,4 +1,7 @@
 <?php
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 // Get the form data
 $name = $_POST['name'];
 $email = $_POST['email'];
@@ -6,7 +9,7 @@ $phone = $_POST['phone'];
 $message = $_POST['message'];
 
 // Set the email recipient
-$to = 'jjczapski@gmail.com';
+$to = 'your-email@example.com';
 
 // Set the email subject
 $subject = 'Wiadomość z formularza kontaktowego';
@@ -24,9 +27,13 @@ $headers = "From: $name <$email>\r\n";
 $headers .= "Reply-To: $email\r\n";
 
 // Send the email
-mail($to, $subject, $message, $headers);
-
-// Return a success response
-http_response_code(200);
-echo "Wiadomość została wysłana.";
+if (mail($to, $subject, $message, $headers)) {
+  // Return a success response
+  http_response_code(200);
+  echo "Wiadomość została wysłana.";
+} else {
+  // Return an error response
+  http_response_code(500);
+  echo "Wystąpił błąd podczas wysyłania wiadomości.";
+}
 ?>

@@ -16,7 +16,8 @@ addEventListener('DOMContentLoaded', () => {
         })
     })
 
-  const form = document.querySelector("#contact");
+    document.addEventListener("DOMContentLoaded", function() {
+  const form = document.getElementById("contact");
   const nameInput = document.querySelector("#name");
   const emailInput = document.querySelector("#email");
   const phoneInput = document.querySelector("#phone");
@@ -47,3 +48,4 @@ addEventListener('DOMContentLoaded', () => {
     };
     xhr.send("name=" + encodeURIComponent(name) + "&email=" + encodeURIComponent(email) + "&phone=" + encodeURIComponent(phone) + "&message=" + encodeURIComponent(message));
   });
+});
